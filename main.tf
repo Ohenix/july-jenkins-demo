@@ -12,3 +12,11 @@ resource "aws_vpc" "jenkins-vpc" {
     name = "jenkins-vpc"
   }
 }
+resource "aws_subnet" "march" {
+  cidr_block = "10.0.2.0/24"
+  availability_zone = "eu-west-2a"
+
+  tags = {
+    name = "march"
+  }
+}

@@ -14,7 +14,7 @@ resource "aws_vpc" "jenkins-vpc" {
 }
 resource "aws_subnet" "march" {
   cidr_block = "10.0.2.0/24"
-  vpc_id = "aws_vpc.jenkins-vpc.id"
+  vpc_id = "vpc-0e0f52fcebdece95d"
   availability_zone = "eu-west-1a"
 
   tags = {
